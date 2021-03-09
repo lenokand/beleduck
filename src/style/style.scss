@@ -1,8 +1,2 @@
-$bg:#f0f1f3;
-$txt:#404550;
+@import '/node_modules/bootstrap/scss/bootstrap.scss'
 
-:root{
-    font-family: sans-serif;
-    background-color: $bg;
-    color: $txt;
-}
