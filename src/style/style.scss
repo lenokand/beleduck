@@ -1,2 +1,223 @@
-@import '/node_modules/bootstrap/scss/bootstrap.scss'
+@import '/node_modules/bootstrap/scss/bootstrap.scss';
+$gap:15px;
+$font:'Museo Cyrl',
+sans-serif;
+$them: #FFDD00;
+$white: #FFF;
 
+
+body {
+    font-family: $font;
+}
+
+;
+
+.first-screen {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+
+    .container {
+        padding-top: 70px;
+    }
+
+    .navbar {
+        display: flex;
+        margin-left: 4*$gap;
+
+        .logo {
+            max-width: 181px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+        }
+
+        .logo-img {
+            width: 181px;
+            height: 48px;
+        }
+
+        .logo-text {
+            max-width: 11*$gap;
+            margin-top: 5px;
+            color: $white;
+
+            h4 {
+
+                text-align: center;
+                font-size: 12px;
+                line-height: 13px;
+
+            }
+        }
+
+    }
+
+    ;
+
+    .info {
+        a {
+            color: $white;
+            font-size: 16px;
+            line-height: 19px;
+            text-decoration: none;
+
+            letter-spacing: 0.05em;
+        }
+    }
+    .contacts{
+        display: flex;
+        align-items: center;
+        .telephone {
+            font-size: 16px;
+            line-height: 19px;
+           max-width: 190px;
+            letter-spacing: 0.05em;
+            margin-right: 2*$gap;
+            img{
+                margin-right: 5px;
+            }
+        }
+    
+        .adress {
+            max-width: 14*$gap;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            line-height: 16px;
+    
+        }
+    
+        .modal-btn {
+            padding: .5*$gap;
+            position: relative;
+            font-size: 14px;
+            line-height: 17px;
+            /* identical to box height */
+    
+            letter-spacing: 0.05em;
+            .zip{
+                display: inline-block;
+                width: 100%;
+                height: 7px;
+                position: absolute;
+                left: 0;
+                top: 100%;
+                opacity: 0;
+                transition: ease 500ms;
+            }
+            &:hover .zip{
+                
+                opacity: 1;
+            }
+            
+        }
+    
+    }
+    
+    .color-highlight {
+        color: $them;
+    }
+
+
+
+    #exampleModal {
+
+        box-shadow: 0px 0px 15px rgba(196, 196, 196, 0.3);
+        border-radius: 10px;
+
+        .modal-title {
+            font-size: 24px;
+            line-height: 29px;
+            /* identical to box height */
+
+            letter-spacing: 0.05em;
+
+            color: #000000;
+
+        }
+
+        .modal-content {
+            background: #FFFFFF;
+            padding: $gap $gap 3*$gap;
+
+            .btn-close {
+                align-self: flex-end;
+            }
+
+            .container {
+                max-width: 408px;
+                padding: $gap;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .btn-order {
+            background: #FFDD00;
+            padding: $gap 3*$gap;
+            border-radius: 80px;
+
+            &:hover {
+                box-shadow: 0px 0px 15px #FFDD00;
+            }
+        }
+
+        .modal-header {
+            flex-direction: column;
+            align-items: center;
+            border: none;
+
+        }
+
+        .modal-body {
+
+
+            a {
+                padding: 0 1.7*$gap;
+                display: inline-block;
+                text-decoration: none;
+                font-family: Panton;
+                font-size: 12px;
+                line-height: 14px;
+                text-align: center;
+                letter-spacing: 0.05em;
+                color: #828282;
+            }
+
+        }
+
+        .modal-footer {
+            border: none
+        }
+
+        .form-control {
+            border: none;
+            border-bottom: #C4C4C4 1px solid;
+            border-radius: 0;
+
+            &:focus {
+
+                border-bottom: #FFDD00 1px solid;
+            }
+
+            &:invalid:not(:placeholder-shown) {
+                border-color: red;
+            }
+
+            &:valid:not(:placeholder-shown) {
+                border-color: #FFDD00;
+            }
+        }
+    }
+
+
+
+
+}
+
+;

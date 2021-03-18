@@ -1,20 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="fonts/museocyrl.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1>Hello</h1>
+
+  <div class="first-screen" style="background-image: url(fon1.png);">
+
+    <div class="container ">
+
+
+      <nav class="navbar">
+
+
+        <a class="text-decoration-none" href="#">
+          <div class="logo">
+            <div class="logo-img" style=" background-image: url(Logo.png); ">
             </div>
+            <div class="logo-text">
+              <h4>Настенные игровые панели и модули</h4>
+            </div>
+          </div>
+        </a>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- контакты -->
+        <div class="info">
+          <div class="contacts d-flex justify-content-between">
+            <div class="telephone">
+              <a class="text-decoration-none " href="tel:+7(495) 222-60-49">
+                <img src="call-answer.png" alt="call">+7(495) 222-60-49</a>
+
+            </div>
+
+            <div class="adress d-flex">
+              <img src="maps-and-flags.png" alt="call">
+              <div class="adress_info">
+
+                <span class="color-highlight">г.Москва,</span> ул.Складочная,
+
+
+                д.1стр5 оф.3160
+              </div>
+            </div>
+
+
+            <!-- модальное окно -->
+            <div class="modal-btn">
+              <!-- Button trigger modal -->
+              <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <span class="color-highlight">З</span>аказать звонок
+              </a>
+
+              <!-- наведение -->
+              <span class="zip" style="background-image: url(zip.png);"></span>
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content ">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="container d-flex">
+                      <div class="modal-header ">
+
+                        <h5 class="modal-title " id="exampleModalLabel">Заказать звонок</h5>
+
+                      </div>
+                      <div class="modal-body">
+                        <!-- форма -->
+                        <div class="input-group mb-3">
+
+                          <input type="text" class="form-control" name="name" minlength="1" placeholder="Ваше имя"
+                            required aria-label="Username">
+                        </div>
+                        <div class="input-group mb-3">
+
+                          <input type="tel" class="form-control" name="phone" minlength="10"
+                            placeholder="Ваш номер телефона" required aria-label="TelephoneNumber">
+                        </div>
+
+
+                        <a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</a>
+                      </div>
+                      <div class="modal-footer">
+
+                        <button type="submit" class="btn btn-order">Заказать звонок</button>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <menu>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+              </ul>
+            </div>
+          </menu>
         </div>
+
+      </nav>
+
     </div>
-    
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light text-end ">
+            <div class="container-fluid justify-content-between">
+              <a class="navbar-brand" href="#">Navbar</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav> -->
+
+
 </body>
+
 </html>
