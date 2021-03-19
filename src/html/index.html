@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>beleduc</title>
   <link rel="stylesheet" href="fonts/museocyrl.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
@@ -17,7 +17,7 @@
     <div class="container ">
 
 
-      <nav class="navbar">
+      <nav class="navbar flex-column flex-md-row">
 
 
         <a class="text-decoration-none" href="#">
@@ -31,14 +31,11 @@
         </a>
 
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+
         <!-- контакты -->
         <div class="info">
-          <div class="contacts d-flex justify-content-between">
-            <div class="telephone">
+          <div class="contacts d-flex flex-column flex-md-row justify-content-between justify-content-md-end">
+            <div class="telephone ">
               <a class="text-decoration-none " href="tel:+7(495) 222-60-49">
                 <img src="call-answer.png" alt="call">+7(495) 222-60-49</a>
 
@@ -106,29 +103,111 @@
             </div>
 
           </div>
-          <menu>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-              </ul>
-            </div>
+
+
+          <!-- колапсирующее меню -->
+          <menu class="p-0">
+
+            <nav class="navbar navbar-expand-lg  text-end p-0 m-0">
+              <div class="container-fluid justify-content-between">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNav">
+                  <ul class="navbar-nav ">
+                    <li class="nav-item  text-start">
+                      <a class="nav-link active" aria-current="page" href="#">Главная</a>
+                      <img src="zipSmall.png" alt="zip">
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Каталог игровых панелей</a>
+                      <img src="zipSmall.png" alt="zip">
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Видеоролики</a>
+                      <img src="zipSmall.png" alt="zip">
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Для кого?</a>
+                      <img src="zipSmall.png" alt="zip">
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Сферы образования</a>
+                      <img src="zipSmall.png" alt="zip">
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+                    <li class="nav-item text-start">
+                      <a class="nav-link" href="#">Отзывы</a>
+                      <img src="zipSmall.png" alt="zip">
+                      <!-- наведение -->
+                      <span class="zip" style="background-image: url(zip.png);"></span>
+                    </li>
+
+                  </ul>
+                </div>
+
+
+
+              </div>
+            </nav>
+
           </menu>
         </div>
 
       </nav>
+      <div class="title-container col-6">
+        <div class="title text-start ">
+          <h1><Span class="color-highlight">Н</Span>астенные и напольные
+            игровые элементы</h1>
+        </div>
+        <div class="title-info text-start ">
+          <div class="info-left">
+            <span class="color-highlight">!</span>
+          </div>
+          <div class="info_right">
+            <h2><Span class="color-highlight">Успей купить до подорожания!</Span></h2>
+
+            <p class="col-6">Отправьте заявку прямо сейчас и получите <span class="UTP color-highlight">максимальную 
+               <!-- подчеркивание -->
+              <span class="zip" style="background-image: url(zip.png);"></span>
+            
+            </span> выгоду!</p>
+          </div>
+
+        </div>
+        <div class="align-self-center">
+          <button class="btn btn-order align-self-center">
+            Отправить заявку 
+          </button>
+        </div>
+      </div>
+
+
+
+      <div class="advantage">
+        <div class="advantage_contain">
+          <img src="zipBlue.png" alt="zip">
+          <p class="advantage_text"><span class="text-large" > 65 лет</span>
+            на рынке</p>
+        </div>
+      </div>
 
     </div>
+    <!-- плавно передвигающиеся полоски -->
+    <span class="animation-line1"></span>
+    <span class="animation-line2"></span>
   </div>
 
 
@@ -138,34 +217,6 @@
 
 
 
-
-
-
-
-  <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light text-end ">
-            <div class="container-fluid justify-content-between">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav> -->
 
 
 </body>
