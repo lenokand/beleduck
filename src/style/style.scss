@@ -10,6 +10,7 @@ $white: #FFF;
 
 body {
     font-family: $font;
+    background-color: #E5E5E5;
 }
 
 ;
@@ -471,9 +472,41 @@ body {
 
 .second-screen{
     .screen-title{
-       
+     margin-bottom: 4*$gap;  
     }
+    .screen-body{
+        .menu-bar{
+            display: flex;
+            
+            justify-content:space-around ;
 
+            // .container-firstline{
+            //     display: flex;
+            //     justify-content:space-around ;
+                
+            // }
+            // .container-seondline{
+                
+            // }
+            .tab-item{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0 2*$gap;
+
+                height: 50px;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.05em;
+                color: #3B484A;
+                background: $white;
+                border-radius: 80px;
+                p{
+                    margin: 0 0 0 .5*$gap;
+                }
+            }
+        }
+    }
 
 
 }
