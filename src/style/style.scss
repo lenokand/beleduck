@@ -1,4 +1,6 @@
 @import '/node_modules/bootstrap/scss/bootstrap.scss';
+// @import '/node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
 $gap:15px;
 $font:'Museo Cyrl',
 sans-serif;
@@ -24,9 +26,13 @@ body {
 
 .first-screen {
     position: relative;
-    height: 100vh;
+    padding-bottom: 9*$gap;
     background-repeat: no-repeat;
     background-size: cover;
+    height: auto;
+   
+    
+    
     color: $white;
 
     .container {
@@ -335,7 +341,7 @@ body {
 
     .advantage {
         margin-left: 140px;
-        margin-top: 6*$gap;
+        margin-top: 8*$gap;
         background: $white;
         display: flex;
         align-items: center;
@@ -382,7 +388,7 @@ body {
         width: 2px;
         height: 3*$gap;
         position: absolute;
-        top: 86vh;
+        top: 106vh;
         left: calc(50vw - 2px);
         display: inline-block;
         animation-name: myAnimation;
@@ -398,7 +404,7 @@ body {
         width: 2px;
         height: 4*$gap;
         position: absolute;
-        top: 89vh;
+        top: 109vh;
         left: calc(52vw - 2px);
         display: inline-block;
         animation-name: myAnimation2;
@@ -410,24 +416,64 @@ body {
 
     @keyframes myAnimation {
         10% {
-            top: 86vh;
+            top: 106vh;
         }
 
         60% {
-            top: 89vh;
+            top: 109vh;
         }
     }
 
     @keyframes myAnimation2 {
         10% {
-            top: 89vh;
+            top: 109vh;
         }
 
         60% {
-            top: 86vh;
+            top: 106vh;
         }
     }
 
 }
 
 ;
+@media screen and (max-width:995px){
+    .first-screen{
+        .animation-line2, .animation-line1 {
+            width: 0px;
+    
+        }
+    }
+}
+
+@media screen and (min-width:1500px){
+    .first-screen {
+    background-size: cover;   
+    height: 70vw;
+    
+}
+    
+}
+.screen-title{
+    position: relative;
+    h3{
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #3B484A;
+        z-index: 3;
+                }
+                img{
+                    position: absolute;
+                    
+                }
+}
+
+.second-screen{
+    .screen-title{
+       
+    }
+
+
+
+}
