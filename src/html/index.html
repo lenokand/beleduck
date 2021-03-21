@@ -8,8 +8,8 @@
   <title>beleduc</title>
   <link rel="stylesheet" href="fonts/museocyrl.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="telegramform.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="telegramform.js"></script> -->
 </head>
 
 <body>
@@ -74,11 +74,11 @@
                     <div class="container d-flex">
                       <div class="modal-header ">
 
-                        <h5 class="modal-title " id="exampleModalLabel">Заказать звонок</h5>
+                        <h5  class="modal-title " id="exampleModalLabel">Заказать звонок</h5>
 
                       </div>
                       <!-- <form  method="POST" id="form-contact" " class="contact-form" autocomplete="off" enctype="multipart/form-data"> -->
-                        <form  method="POST" id="form-contact" " class="contact-form">
+                        <form action="telegram.php" method="POST" id="form-contact" " class="contact-form">
                         <p class="contact-form__message"></p>
                         <div class="modal-body">
                           <!-- форма -->
@@ -226,9 +226,34 @@
     <!-- плавно передвигающиеся полоски -->
     <span class="animation-line1"></span>
     <span class="animation-line2"></span>
+    
+    <div data-relative-input="true"  id="scene" >
+     
+        <img data-depth="0.2" class="parallax-subtract" src="Subtract.png" alt="Subtract">
+        
+    </div>
+
+    <div  data-relative-input="true"   id="scene2">
+      <img data-depth="0.4" class="parallax-tryangle" src="tryangle.png" alt="tryangle">
+    </div>
+    <div  data-relative-input="true"   id="scene3">
+      <img data-depth="0.4"  src="SubtractWhite.svg" alt="SubtractWhite">
+    </div>
+    <div  data-relative-input="true"   id="scene4">
+      <img data-depth="0.4"  src="tryangleYellow.svg" alt="tryangleYellow">
+    </div>
+    <div  data-relative-input="true"   id="scene5">
+      <img data-depth="0.4"  src="Qvadrangle.svg" alt="Qvadrangle">
+    </div>
+    <div  data-relative-input="true"   id="scene6">
+      <img data-depth="0.4"  src="QvadrangleYellow.png" alt="QvadrangleYellow">
+    </div>
+
   </div>
 
 
+
+  <!-- второй экран -->
 <div class="second-screen">
 <div class="screen-title d-flex align-items-center justify-content-center">
   <h3>
@@ -236,6 +261,7 @@
   </h3>
   <img src="SubtractYellow.png" alt="Subtract">
 </div>
+
 
 <div class="screen-body">
   <div class="container">
@@ -277,7 +303,27 @@
       <!-- контент табов -->
       <div class="tab-content" id="nav-tabContent">
         <div class="tab-pane fade show active" id="nav-bee" role="tabpanel" aria-labelledby="nav-bee-tab">
-          <img src="bee.png" alt="">
+          
+          <div class="card" style="width: 18rem;">
+            <img src="cardBee.png" class="card-img-top" alt="Bee">
+            <div class="card-body">
+              <h5 class="card-title">„Пчёлка“</h5>
+              <divn  class="card-text">Собирайте пыльцу и
+                заглядывайте в улей</divn>
+                <div><a class="text-decoration-none" href="#">Больше информации ></a> </div>
+
+                <div class="price">
+                  2500  <span>₽</span>
+                </div>
+
+                <div class="interactive">
+
+                </div>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+          
+          
   
         </div>
         <div class="tab-pane fade" id="nav-train" role="tabpanel" aria-labelledby="nav-train-tab">
@@ -316,7 +362,7 @@
 
 
 
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
 </body>
 
 </html>
