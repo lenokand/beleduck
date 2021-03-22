@@ -11,7 +11,8 @@ $white: #FFF;
 body {
     font-family: $font;
     background-color: #E5E5E5;
-    max-width: 100vw
+    max-width: 100vw;
+    // overflow: hidden;
 }
 
 ;
@@ -28,7 +29,21 @@ body {
 
 
 
-
+.scene-container{
+    // overflow: hidden;
+    max-width: 100vw;
+    // position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+@media screen and(max-width:1200px){
+    .scene-container{
+        display: none;
+    }  
+}
 
 #scene{
     position: absolute;
@@ -60,7 +75,7 @@ body {
     }
     &6{
         position: absolute;
-        left: 89%;
+        left: 84%;
         top: 69%;
     }
     
@@ -85,6 +100,7 @@ body {
     .container {
         padding-top: 70px;
         padding-left: 50px;
+        z-index: 1;
     }
 
     .navbar {
@@ -526,6 +542,7 @@ body {
             
             justify-content:space-around ;
             margin-bottom: 1.5*$gap;
+            border-bottom: none;
             // .container-firstline{
             //     display: flex;
             //     justify-content:space-around ;
@@ -534,12 +551,14 @@ body {
             // .container-seondline{
                 
             // }
+
+            
             .tab-item{
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 padding: 0 2*$gap;
-
+                margin-bottom: $gap;
                 height: 50px;
                 font-size: 14px;
                 line-height: 17px;
