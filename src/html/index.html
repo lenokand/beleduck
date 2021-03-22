@@ -7,7 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>beleduc</title>
   <link rel="stylesheet" href="fonts/museocyrl.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script src="telegramform.js"></script> -->
 </head>
@@ -97,7 +100,7 @@
 
                           <a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных данных</a>
                         </div>
-                        <div class="modal-footer">
+                        <div class="modal-footer justify-content-center">
 
                           <button type="submit" class="btn btn-order">Заказать звонок</button>
                         </div>
@@ -271,7 +274,7 @@
     <div class="screen-body">
       <div class="container">
         <nav>
-          <!-- Сами табы -->
+          <!-- табы -->
           <div class="menu-bar nav nav-tabs" id="nav-tab" role="tablist">
 
             <div class="tab-item active" id="nav-bee-tab" data-bs-toggle="tab" data-bs-target="#nav-bee"
@@ -312,26 +315,50 @@
 
           </div>
           <!-- контент табов -->
+
           <div class="tab-content" id="nav-tabContent">
+
+
+
             <div class="tab-pane fade show active" id="nav-bee" role="tabpanel" aria-labelledby="nav-bee-tab">
 
               <div class="card" style="width: 18rem;">
                 <img src="cardBee.png" class="card-img-top" alt="Bee">
+                <img src="search.png" class="alternative-img" alt="search">
                 <div class="card-body">
-                  <h5 class="card-title">„Пчёлка“</h5>
-                  <divn class="card-text">Собирайте пыльцу и
-                    заглядывайте в улей</divn>
-                  <div><a class="text-decoration-none" href="#">Больше информации ></a> </div>
+                  <div class="card-title">„Пчёлка“</div>
+                  <div class="card-text">Собирайте пыльцу и
+                    заглядывайте в улей</div>
+                    <!-- ВЫзов модального больше информации -->
+                  <div><a class="text-decoration-none more-info" href="#" data-bs-toggle="modal"
+                      data-bs-target="#staticBackdrop">Больше информации ></a> </div>
+                  
+                  
+                 
 
+
+                  <!-- /Modal -->
                   <div class="price">
                     2500 <span>₽</span>
                   </div>
 
-                  <div class="interactive">
+                  <div class="interactive ">
+                    <div class="iny-img intDrow"><img src="intDrow.png" alt="drow"></div>
+                    <div class="iny-img intDance"> <img src="intDance.png" alt="dance"></div>
+                    <div class="iny-img intTouch"> <img src="intTouch.png" alt="hand"></div>
+
+
 
                   </div>
-                  <a href="#" class="btn btn-primary">Купить</a>
+
+
+                  <!-- Вызов модального купить -->
+                  <a href="#" class="btn btn-order btn-card" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal2">Купить</a>
+
+
                 </div>
+
               </div>
 
 
@@ -353,11 +380,97 @@
               <img src="bulleye.png" alt="train">
             </div>
 
+
+            <!-- модальное -->
+            <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+              aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content ">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  <div class="container d-flex">
+                    <div class="modal-header ">
+
+                      <h5 class="modal-title " id="exampleModalLabel2">Купить</h5>
+
+                    </div>
+
+                    <form action="telegram.php" method="POST" id="form-contact" " class=" contact-form">
+                      <p class="contact-form__message"></p>
+                      <div class="modal-body">
+                        <!-- форма -->
+
+                        <div class="input-group mb-3">
+
+                          <input type="text" class="form-control" name="name" minlength="1" placeholder="Ваше имя"
+                            required aria-label="Username">
+                        </div>
+                        <div class="input-group mb-3">
+
+                          <input type="tel" class="form-control" name="phone" minlength="10"
+                            placeholder="Ваш номер телефона" required aria-label="TelephoneNumber">
+                        </div>
+                        <div class="input-group mb-3">
+
+                          <input type="email" class="form-control" name="email" minlength="3" placeholder="Ваша почта"
+                            required aria-label="Emeil">
+                        </div>
+                        <div class="input-group mb-3">
+
+                          <input type="text" class="form-control" name="coment" placeholder="Комметарий"
+                            aria-label="Emeil">
+                        </div>
+
+
+                        <a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных
+                          данных</a>
+                      </div>
+                      <div class="modal-footer">
+
+                        <button type="submit" class="btn btn-order">Купить</button>
+                      </div>
+                    </form>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+ <!-- /модальное -->
+      <!-- Модальное больше инфо -->
+      <div class="modal modal-moreinfo fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+      tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header ">
+        
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <div class="card-title " id="staticBackdropLabel">  <img src="cardBee.png" class="" alt="Bee"> </div>
           </div>
+          <div class="modal-body">
+            <h3>„Пчёлка“</h3>
+            <div class="modal-text">Наши  новые  шесть  напольных  элементов позволят  малышам  в  игровой  форме  узнать о  жизни  пчел. Каждый  элемент  предлагает свой  вариант  игры.  Привлекательный  дизайн развивает у ребенка интерес к игре.</div>
+            <div class="size">Размер: 750 × 1180 мм</div>
+            <div class="interactive ">
+              <div class="iny-img intDrow"><img src="intDrow.png" alt="drow"></div>
+              <div class="iny-img intDance"> <img src="intDance.png" alt="dance"></div>
+              <div class="iny-img intTouch"> <img src="intTouch.png" alt="hand"></div>
+
+
+
+            </div>
+
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- Модальное больше инфо -->
+          </div>
+
         </nav>
 
 
-        <!-- container -->
+        <!-- /container -->
       </div>
 
 
