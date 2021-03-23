@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
   <meta charset="UTF-8">
@@ -17,229 +17,232 @@
 
 <body>
 
-  <div class="first-screen" style="background-image: url(fon1.png);">
+  <div class="first-screen" >
+    <div class="wrapper"style="background-image: url(fon1.png) ;" >
+      <div class="container ">
 
-    <div class="container ">
 
-
-      <nav class="navbar " id="mainNav">
-
-        <!-- лого -->
-        <a class="text-decoration-none " href="#">
-          <div class="logo">
-            <div class="logo-img" style=" background-image: url(Logo.png); ">
+        <nav class="navbar " id="mainNav">
+  
+          <!-- лого -->
+          <a class="text-decoration-none " href="#">
+            <div class="logo">
+              <div class="logo-img" style=" background-image: url(Logo.png); ">
+              </div>
+              <div class="logo-text">
+                <h4>Настенные игровые панели и модули</h4>
+              </div>
             </div>
-            <div class="logo-text">
-              <h4>Настенные игровые панели и модули</h4>
-            </div>
-          </div>
-        </a>
-
-
-
-
-        <!-- коллопсирующее меню -->
-        <menu class="p-0">
-          <!-- бургер кнопка -->
-          <a class="navbar-toggler" id="burger-menu" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="burger"> </span>
-          <span class="burger"> </span>
-          <span class="burger"> </span>
-
-        </a>
-          <nav class="navbar navbar-expand-lg   p-0 m-0">
-
-            <div class="container-fluid justify-content-between">
-              
-
-              <div class="collapse navbar-collapse " id="navbarNav">
-
-                <!-- контакты -->
-                <div class="info">
-
-                  <div class="contacts d-flex flex-column flex-lg-row justify-content-between justify-content-md-end ">
-                    <div class="telephone ">
-                      <a class="text-decoration-none " href="tel:+7(495) 222-60-49">
-                        <img src="call-answer.png" alt="call">+7(495) 222-60-49</a>
-
-                    </div>
-
-                    <div class="adress d-flex">
-                      <img src="maps-and-flags.png" alt="call">
-                      <div class="adress_info">
-
-                        <span class="color-highlight">г.Москва,</span> ул.Складочная,
-
-
-                        д.1стр5 оф.3160
+          </a>
+  
+  
+  
+  
+          <!-- коллопсирующее меню -->
+          <menu class="p-0">
+            <!-- бургер кнопка -->
+            <a class="navbar-toggler" id="burger-menu" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="burger"> </span>
+            <span class="burger"> </span>
+            <span class="burger"> </span>
+  
+          </a>
+            <nav class="navbar navbar-expand-lg   p-0 m-0">
+  
+              <div class="container-fluid justify-content-between">
+                
+  
+                <div class="collapse navbar-collapse " id="navbarNav">
+  
+                  <!-- контакты -->
+                  <div class="info">
+  
+                    <div class="contacts d-flex flex-column flex-lg-row justify-content-between justify-content-md-end ">
+                      <div class="telephone ">
+                        <a class="text-decoration-none " href="tel:+7(495) 222-60-49">
+                          <img src="call-answer.png" alt="call">+7(495) 222-60-49</a>
+  
                       </div>
-                    </div>
-
-
-                    <!-- модальное окно -->
-                    <div class="modal-btn">
-                      <!-- Button trigger modal -->
-                      <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        <span class="color-highlight">З</span>аказать звонок
-                      </a>
-
-                      <!-- наведение -->
-                      <span class="zip" style="background-image: url(zip.png);"></span>
-
-                      <!-- Modal -->
-                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog">
-                          <div class="modal-content ">
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            <div class="container d-flex">
-                              <div class="modal-header ">
-
-                                <h5 class="modal-title " id="exampleModalLabel">Заказать звонок</h5>
-
-                              </div>
-                              <!-- <form  method="POST" id="form-contact" " class="contact-form" autocomplete="off" enctype="multipart/form-data"> -->
-                              <form action="telegram.php" method="POST" id="form-contact" " class=" contact-form">
-                                <p class="contact-form__message"></p>
-                                <div class="modal-body">
-                                  <!-- форма -->
-
-                                  <div class="input-group mb-3">
-
-                                    <input type="text" class="form-control" name="name" minlength="1"
-                                      placeholder="Ваше имя" required aria-label="Username">
-                                  </div>
-                                  <div class="input-group mb-3">
-
-                                    <input type="tel" class="form-control" name="phone" minlength="10"
-                                      placeholder="Ваш номер телефона" required aria-label="TelephoneNumber">
-                                  </div>
-
-
-                                  <a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных
-                                    данных</a>
-                                </div>
-                                <div class="modal-footer justify-content-center">
-
-                                  <button type="submit" class="btn btn-order">Заказать звонок</button>
-                                </div>
-                              </form>
-
-                            </div>
-
-                          </div>
+  
+                      <div class="adress d-flex">
+                        <img src="maps-and-flags.png" alt="call">
+                        <div class="adress_info">
+  
+                          <span class="color-highlight">г.Москва,</span> ул.Складочная,
+  
+  
+                          д.1стр5 оф.3160
                         </div>
                       </div>
+  
+  
+                      <!-- модальное окно -->
+                      <div class="modal-btn">
+                        <!-- Button trigger modal -->
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                          <span class="color-highlight">З</span>аказать звонок
+                        </a>
+  
+                        <!-- наведение -->
+                        <span class="zip" style="background-image: url(zip.png);"></span>
+  
+                      
+                      </div>
+  
                     </div>
-
+  
+                    <!-- /контакты -->
+  
+                    <!-- меню -->
+                    <ul class="navbar-nav align-items-baseline ">
+                      <li class="nav-item  text-start">
+                        <a class="nav-link active" aria-current="page" href="#">Главная</a>
+  
+                        <!-- наведение -->
+                        <span class="zip" style="background-image: url(zip.png);"></span>
+                      </li>
+  
+                      <img src="zipSmall.png" alt="zip">
+  
+                      <li class="nav-item text-start">
+                        <a class="nav-link" href="#">Каталог игровых панелей</a>
+  
+                        <!-- наведение -->
+                        <span class="zip" style="background-image: url(zip.png);"></span>
+                      </li>
+                      <img src="zipSmall.png" alt="zip">
+                      <li class="nav-item text-start">
+                        <a class="nav-link" href="#">Видеоролики</a>
+  
+                        <!-- наведение -->
+                        <span class="zip" style="background-image: url(zip.png);"></span>
+                      </li>
+  
+                      <img src="zipSmall.png" alt="zip">
+  
+                      <li class="nav-item text-start">
+                        <a class="nav-link" href="#">Для кого?</a>
+  
+                        <!-- наведение -->
+                        <span class="zip" style="background-image: url(zip.png);"></span>
+                      </li>
+                      <img src="zipSmall.png" alt="zip">
+  
+                      <li class="nav-item text-start">
+                        <a class="nav-link" href="#">Сферы образования</a>
+  
+                        <!-- наведение -->
+                        <span class="zip" style="background-image: url(zip.png);"></span>
+                      </li>
+                      <img src="zipSmall.png" alt="zip">
+                      <li class="nav-item text-start">
+                        <a class="nav-link" href="#">Отзывы</a>
+  
+                        <!-- наведение -->
+                        <span class="zip" style="background-image: url(zip.png);"></span>
+                      </li>
+                      <!-- <img src="zipSmall.png" alt="zip"> -->
+  
+                    </ul>
+                    <!-- / меню -->
                   </div>
-
-                  <!-- /контакты -->
-
-                  <!-- меню -->
-                  <ul class="navbar-nav align-items-baseline ">
-                    <li class="nav-item  text-start">
-                      <a class="nav-link active" aria-current="page" href="#">Главная</a>
-
-                      <!-- наведение -->
-                      <span class="zip" style="background-image: url(zip.png);"></span>
-                    </li>
-
-                    <img src="zipSmall.png" alt="zip">
-
-                    <li class="nav-item text-start">
-                      <a class="nav-link" href="#">Каталог игровых панелей</a>
-
-                      <!-- наведение -->
-                      <span class="zip" style="background-image: url(zip.png);"></span>
-                    </li>
-                    <img src="zipSmall.png" alt="zip">
-                    <li class="nav-item text-start">
-                      <a class="nav-link" href="#">Видеоролики</a>
-
-                      <!-- наведение -->
-                      <span class="zip" style="background-image: url(zip.png);"></span>
-                    </li>
-
-                    <img src="zipSmall.png" alt="zip">
-
-                    <li class="nav-item text-start">
-                      <a class="nav-link" href="#">Для кого?</a>
-
-                      <!-- наведение -->
-                      <span class="zip" style="background-image: url(zip.png);"></span>
-                    </li>
-                    <img src="zipSmall.png" alt="zip">
-
-                    <li class="nav-item text-start">
-                      <a class="nav-link" href="#">Сферы образования</a>
-
-                      <!-- наведение -->
-                      <span class="zip" style="background-image: url(zip.png);"></span>
-                    </li>
-                    <img src="zipSmall.png" alt="zip">
-                    <li class="nav-item text-start">
-                      <a class="nav-link" href="#">Отзывы</a>
-
-                      <!-- наведение -->
-                      <span class="zip" style="background-image: url(zip.png);"></span>
-                    </li>
-                    <img src="zipSmall.png" alt="zip">
-
-                  </ul>
-                  <!-- / меню -->
+  
+  
+  
                 </div>
-
-
-
+                </div>
+              
+            </nav>
+  
+          </menu>
+  
+  
+        </nav>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content ">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              <div class="container d-flex">
+                <div class="modal-header ">
+  
+                  <h5 class="modal-title " id="exampleModalLabel">Заказать звонок</h5>
+  
+                </div>
+                <!-- <form  method="POST" id="form-contact" " class="contact-form" autocomplete="off" enctype="multipart/form-data"> -->
+                <form action="telegram.php" method="POST" id="form-contact" " class=" contact-form">
+                  <p class="contact-form__message"></p>
+                  <div class="modal-body">
+                    <!-- форма -->
+  
+                    <div class="input-group mb-3">
+  
+                      <input type="text" class="form-control" name="name" minlength="1"
+                        placeholder="Ваше имя" required aria-label="Username">
+                    </div>
+                    <div class="input-group mb-3">
+  
+                      <input type="tel" class="form-control" name="phone" minlength="10"
+                        placeholder="Ваш номер телефона" required aria-label="TelephoneNumber">
+                    </div>
+  
+  
+                    <a href="#">Нажимая на кнопку, вы даете согласие на обработку своих персональных
+                      данных</a>
+                  </div>
+                  <div class="modal-footer justify-content-center">
+  
+                    <button type="button" type="submit" class="btn btn-order">Заказать звонок</button>
+                  </div>
+                </form>
+  
               </div>
-              </div>
-            
-          </nav>
-
-        </menu>
-
-
-      </nav>
-      <div class="title-container col-11 col-m-8 col-lg-6">
-        <div class="title text-start ">
-          <h1><Span class="color-highlight">Н</Span>астенные и напольные
-            игровые элементы</h1>
-        </div>
-        <div class="title-info text-start">
-          <div class="info-left">
-            <span class="color-highlight">!</span>
+  
+            </div>
           </div>
-          <div class="info_right">
-            <h2><Span class="color-highlight">Успей купить до подорожания!</Span></h2>
-
-            <p class="col-lg-6 col-md-8 col-sm-10">Отправьте заявку прямо сейчас и получите <span class="UTP color-highlight">максимальную
-                <!-- подчеркивание -->
-                <span class="zip" style="background-image: url(zip.png);"></span>
-
-              </span> выгоду!</p>
+        </div>
+        <div class="title-container col-11 col-m-8 col-lg-6">
+          <div class="title text-start ">
+            <h1><Span class="color-highlight">Н</Span>астенные и напольные
+              игровые элементы</h1>
           </div>
-
+          <div class="title-info text-start">
+            <div class="info-left">
+              <span class="color-highlight">!</span>
+            </div>
+            <div class="info_right">
+              <h2><Span class="color-highlight">Успей купить до подорожания!</Span></h2>
+  
+              <p class="col-lg-6 col-md-8 col-sm-10">Отправьте заявку прямо сейчас и получите <span class="UTP color-highlight">максимальную
+                  <!-- подчеркивание -->
+                  <span class="zip" style="background-image: url(zip.png);"></span>
+  
+                </span> выгоду!</p>
+            </div>
+  
+          </div>
+          <div class="align-self-center">
+            <button class="btn btn-order align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Отправить заявку
+            </button>
+          </div>
         </div>
-        <div class="align-self-center">
-          <button class="btn btn-order align-self-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
-            Отправить заявку
-          </button>
+  
+        <img class="girl" src="girl.png" alt="girl">
+  
+        <div class="advantage ">
+          <div class="advantage_contain ">
+            <img src="zipBlue.png" alt="zip">
+            <p class="advantage_text"><span class="text-large"> 65 лет</span>
+              на рынке</p>
+          </div>
         </div>
+        
       </div>
-
-
-
-      <div class="advantage ">
-        <div class="advantage_contain ">
-          <img src="zipBlue.png" alt="zip">
-          <p class="advantage_text"><span class="text-large"> 65 лет</span>
-            на рынке</p>
-        </div>
-      </div>
-
     </div>
+  
     <!-- плавно передвигающиеся полоски -->
     <span class="animation-line1"></span>
     <span class="animation-line2"></span>
@@ -276,7 +279,7 @@
 
 
   <!-- второй экран -->
-  <div class="second-screen" style="background-image: url(fon2.png);">
+  <div class="second-screen" >
     <div class="screen-title d-flex align-items-center justify-content-center">
       <h3>
         Настенные игровые панели и модули
